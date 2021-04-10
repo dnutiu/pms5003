@@ -3,6 +3,12 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PackageId>PMS5003</PackageId>
+        <Version>1.0.2</Version>
+        <Authors>Denis Nutiu</Authors>
+        <Company>NucuLabs.dev</Company>
+        <Description>C# Library for interfacing with the PMS5003 Particulate Matter Sensor.</Description>
+        <Licence>https://www.gnu.org/licenses/gpl-3.0.en.html</Licence>
     </PropertyGroup>
 
     <ItemGroup>
