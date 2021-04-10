@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMS5003", "PMS5003\PMS5003.csproj", "{918D79E6-9AE8-4FA8-8400-BD3A26BB4A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMS5003Tests", "PMS5003Tests\PMS5003Tests.csproj", "{AF7541BD-C0B1-42FE-AEFB-1A1D9CEAC6B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{918D79E6-9AE8-4FA8-8400-BD3A26BB4A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918D79E6-9AE8-4FA8-8400-BD3A26BB4A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918D79E6-9AE8-4FA8-8400-BD3A26BB4A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918D79E6-9AE8-4FA8-8400-BD3A26BB4A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7541BD-C0B1-42FE-AEFB-1A1D9CEAC6B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7541BD-C0B1-42FE-AEFB-1A1D9CEAC6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7541BD-C0B1-42FE-AEFB-1A1D9CEAC6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7541BD-C0B1-42FE-AEFB-1A1D9CEAC6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
