@@ -96,6 +96,7 @@ namespace PMS5003
                 finally
                 {
                     currentTry += 1;
+                    Thread.Sleep(1000);
                 }
             }
 
