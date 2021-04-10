@@ -92,11 +92,11 @@ namespace PMS5003
                 catch (Exception e)
                 {
                     Logger?.LogWarning(e.ToString());
+                    Thread.Sleep(1000);
                 }
                 finally
                 {
                     currentTry += 1;
-                    Thread.Sleep(1000);
                 }
             }
 
