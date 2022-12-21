@@ -16,7 +16,7 @@ namespace Application
     {
         static void Main(string[] args)
         {
-            var pms = new Pms5003();
+            var pms = new Pms5003("COM3", -1, -1);
             while (true)
             {
                 try

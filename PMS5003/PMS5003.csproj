@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
+        <OutputType>Library</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <PackageId>PMS5003</PackageId>
-        <Version>1.0.4</Version>
+        <Version>1.1.0</Version>
         <Authors>Denis Nutiu</Authors>
         <Company>NucuLabs.dev</Company>
         <Description>C# Library for interfacing with the PMS5003 Particulate Matter Sensor.</Description>

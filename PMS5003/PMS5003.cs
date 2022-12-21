@@ -79,14 +79,28 @@ namespace PMS5003
         public Pms5003Data ReadData()
         {
             var currentTry = 0;
-            const int maxRetries = 5;
+            const int maxRetries = 50;
 
+            var buffer = new byte[32];
             while (currentTry < maxRetries)
             {
                 try
                 {
-                    var buffer = new byte[32];
-                    _serialPort.Read(buffer, 0, 32);
+                    // Try to find start frame
+                    _serialPort.Read(buffer, 0, 1);
+                    if (buffer[0] != Pms5003Constants.StartByte1)
+                    {
+                        continue;
+                    }
+
+                    _serialPort.Read(buffer, 1, 1);
+                    if (buffer[1] != Pms5003Constants.StartByte2)
+                    {
+                        continue;
+                    }
+
+                    // Read rest of data
+                    _serialPort.Read(buffer, 2, 30);
                     return Pms5003Data.FromBytes(buffer);
                 }
                 catch (Exception e)

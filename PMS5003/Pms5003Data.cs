@@ -37,12 +37,7 @@ namespace PMS5003
         public static Pms5003Data FromBytes(byte[] buffer)
         {
             var pms5003Measurement = new Pms5003Data();
-
-            if (buffer.Length < 4)
-            {
-                throw new BufferUnderflowException();
-            }
-
+            
             if (buffer[0] != Pms5003Constants.StartByte1 || buffer[1] != Pms5003Constants.StartByte2)
             {
                 throw new InvalidStartByteException(buffer[0], buffer[1]);
